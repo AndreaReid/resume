@@ -30,7 +30,7 @@ function initMap() {
     zoom: 2,
     center: {lat: 21.946629500203038, lng: -78.1834635059868},
 	// add "Aubergine" style from https://mapstyle.withgoogle.com/
-	/* styles: [
+	styles: [
   {
     "elementType": "geometry",
     "stylers": [
@@ -355,7 +355,7 @@ function initMap() {
       }
     ]
   }
-] */
+]
   });
   var infoWin = new google.maps.InfoWindow();
   // Add some markers to the map.
