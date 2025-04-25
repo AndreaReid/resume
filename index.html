@@ -5,7 +5,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=zaSyCWPvZhxZEjt0TegbEOaVgDZJv0pu3ZV4w&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgdS9-ve8UZGKwEWncCvyCFeBj9fjfzNY&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -17,10 +17,11 @@
 	<div id="mySidebar" class="sidebar">
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	    <a href="#About">About</a>
+	    <a href="#Pitch">Pitch</a>
 	    <a href="#Projects">Projects</a>
 	    <a href="#Education">Education</a>
 	    <a href="#Experience">Experience</a>
-	    <a href="#Skills">Skills</a>
+	    <a href="#Skills">Skills</a>	
 	</div>
 	
 	<div id="mySidebarRight" class="sidebarRight">
@@ -62,7 +63,7 @@
 	</div>
 
 	<div id="main">
-		<div id="btn">
+		<div id="btn" class="bg-transparent">
 			<button class="openbtn" onclick="openNav()">☰</button> 	
 		</div>
 		
@@ -78,11 +79,11 @@
 		  <div class="col-7">
 			<h2 class="line">About Me</h2>
 			<div>
-			<p>I am an ecologist with experience in biodiversity research and conservation genetics. Throughout my career, I have had the opportunity to work in many different environments across three different continents. 
+			<p>I am a geospatial researcher with an interest in 3D city modeling and flood impact assessment. Specifically, I use imagery and point cloud data to create accurate and scalable solutions, taking advantage of the major advancements available for AI-related technologies. 
 			</p>
-			<p>I have worked 'on the ground' in Canada, Ecuador, Switzerland, and Spain, collecting the data necessary for understanding patterns and processes in the natural world. I have worked on experimental fields in the Alps, managing common garden experiments to assess the evolutionary response of an invasive plant species. And I have worked in the lab, designing and implementing methods to help answer ecological questions using molecular tools. 
+			<p>I received my MSc in Environmental Sciences at ETH Zurich in Switzerland and completed the GIS Applications Specialist program at Fleming College where I helped create a rooftop solar potential web application for the City of Peterborough in Ontario. I am currently enrolled as a graduate student in the Department of Geodesy and Geomatics at the University of New Brunswick.
 			</p>
-			<p>Now, equipped with a new skillset acquired from the GIS Applications Specialist program at Fleming College, I hope to be able to use spatial data to help monitor and conserve our natural world.
+			<p>I have experience working with a variety of 2D and 3D data types in both GUI and scripting (python) environments. My current work involves the use of deep learning models for image segmentation and classification tasks. I have a good understanding of photogrammetric processes and other reality capture techniques (e.g., mobile laser scanning) and am very keen to apply this knowledge to help build scalable solutions for disaster management.
 			</p>
 			</div>
 		  </div>
@@ -90,34 +91,97 @@
 		   <div class="about">
 			<img src="images/Profile.jpg" alt="Profile photo" width="258.5" height="279.7" class="circle" >
 		   </div>
-		  </div>		  
+		  </div>	
 		</section>
-
+		<!--
 		<section class="col-12" id="Projects">
 			<h2 class="line">My Projects</h2>
 			<p>Click on the map icons for a brief description of the projects I have worked on in the past.</p>
 			<div id="map"></div>
 			<p>Note: Interactive map created using Google Maps JavaScript API.</p>
 		</section>
-
-		<section class="col-12 bg-color" id="Education">		
+		-->
+		<section class="col-12" id="Pitch">	
+			<h2 class="line">Research Pitch</h2>
+			<div class="col-12">
+				<div>		
+					<p>Check out this 3 minute pitch on how 3D city modeling and AI can be used to scale up flood risk assessments using multi-source and multi-angle geospatial data. For a better viewing experience, <a href = "https://www.youtube.com/embed/cPLNhCZrSyk" class="links">click here</a> to open the YouTube video in another window.</p>
+				</div>
+				<div>
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/cPLNhCZrSyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+		</section>
+		<section class="bg-color col-12" id="Projects">
+			<h2 class="line">Projects</h2>
+			<div class="col-12">
+				<div class="col-7b">
+					<h3 class="sections">Urban Flood Risk and Digital Twins</h3>
+					<p>The main focus of my graduate studies at UNB is on the creation of 3D city models for improving flood risk assessment in cities. This work involves a novel approach to using multi-source geospatial data for creating 3D building representations. A major challenge to understanding flood risk of buildings is the development of a comprehensive database that includes flood relevant features, such as first floor elevation. To obtain this information at scale, we can extract it automatically from a variety of geospatial data sources (e.g., airborne LiDAR, orthoimagery, and street-level mobile mapping data) using Artificial Intelligence (AI). Check out my poster for a more detailed overview of the project, or <a href = "https://andreareid.github.io/resume/images/Poster.pdf" class="links">click here</a> to view the poster to its full extent.</p>
+				</div>
+				<div class="col-5b">				
+					<iframe width="100%" height="300px" src="https://andreareid.github.io/resume/images/Poster.pdf" title="Research poster"></iframe>	
+				</div>
+			</div>
+		</section>
+		<section class="bg-color col-12" id="Projects">
+			<div class="col-12">		
+				<div class="col-7b">
+					<h3 class="sections">Big Data Pipeline</h3>
+					<p>For our final project in the course "Big Data Pipeline", my team and I used AI to predict economic trends during the pandemic from a large time-series dataset. The project deviates from my main interest in geospatial data, but it demonstrates my competency in data science workflows and applying appropriate machine learning algorithms to solve big data problems. <a href = "https://andreareid.github.io/BigData/FinalProject/BigData_FinalProject_Report.pdf" class="links">Click here</a> to read the final report and see how we were able to use deep learning to predict economic activity from COVID-19 case counts.</p>
+				</div>
+				<div class="col-5b">							
+					<iframe width="100%" height="300px" src="https://andreareid.github.io/BigData/FinalProject/BigData_FinalProject_Report.pdf" title="Big Data Project"></iframe>	
+				</div>	
+		</section>
+		<section class="bg-color col-12" id="Projects">
+			<div class="col-12">		
+				<div class="col-7b">
+					<h3 class="sections">GIS Program StoryMap</h3>
+					<p>For an overview of the projects I completed for my one-year GIS specialist program at Fleming College, check out the StoryMap <a href = "https://storymaps.arcgis.com/stories/b94379eb18d5496588bf363f5aadd018" class="links">here</a>.</p>
+				</div>
+				<div class="col-5b">
+					<a href = "https://storymaps.arcgis.com/stories/b94379eb18d5496588bf363f5aadd018"><img width="100%" height="300px" src="https://andreareid.github.io/resume/images/storymap.png" title="GIS StoryMap"></img></a>					
+				</div>
+		</section>
+		<section class="col-12" id="Education">		
 			<h2 class="line">Education</h2>
 		  <div class="col-12">	
-			<h3 class="sections education">GIS Specialist Certificate, Fleming College (in progress)</h3>
-			<p>Applications Specialist Stream</p>
+			<h3 class="sections education">Graduate Program, Geodesy and Geomatics Engineering, University of New Brunswick</h3>
+			<p><b>Jan 2022 - current</b> | Current GPA: 4.3 (on scale of 0.0 - 4.3)</p>
+			<p>Thesis: 3D city modeling and flood risk analysis from street-view imagery and mobile point cloud data.</p>			
+		  </div>
+		  <div class="col-12">	
+			<h3 class="sections education">GIS Specialist Certificate, Fleming College</h3>
+			<p><b>Sep 2020 - Jun 2021</b> | Program GPA: 3.8 (on scale of 0.0 - 4.0)</p>
+			<p>Project topic: solar potential of rooftops in Peterborough using airborne LiDAR point cloud data.</p>
 		  </div>
 		  <div class="col-12">
-			<h3 class="sections education">Master of Science, ETH Zurich (2012)</h3>
-			<p>Thesis: Conservation Genetics of a Rare Plant Species in the Canary Islands.</p>
+			<h3 class="sections education">Master of Environmental Sciences, ETH Zurich</h3>
+			<p><b>Sep 2009 - Apr 2012</b> | Program GPA: 5.5 (on scale of 1.0 - 6.0)</p>
+			<p>Major in Ecology and Evolution</p>
 		  </div>
 		  <div class="col-12">
-			<h3 class="sections education">Bachelor of Science, University of Guelph (2007)</h3>
+			<h3 class="sections education">Bachelor of Science, University of Guelph</h3>
+			<p><b>Sep 2002 - 2007</b></p>
 			<p>Major in Marine and Freshwater Biology</p>
 		  </div>
 		</section>	
 
-		<section id="Experience" class="col-12">
+		<section id="Experience" class="col-12 bg-color">
 		 <h2 class="line">Work Experience</h2>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">University of New Brunswick</h3>
+			<p>Fredericton, NB, Canada<br>
+			Sep 2022 - Apr 2023</p>	
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Teaching Assistant, Geodesy and Geomatics</h3>
+			<p><b>Intro to GIS</b>: Develop and lead computer lab tutorials for the undergraduate course 'Introduction to Geographic Information Systems' using Esri software (ArcGIS Pro). Assist students with analytic and technical software functionality and help troubleshoot software-related issues. Grade assignments.</p>
+			<p><b>Intro to Big Data</b>: Develop and lead introductory tutorials for python programming. Help students with technical issues related to the big data pipeline: data access, data storage, data exploration/visualization, and machine learning. Grade assignments and video submissions.</p>
+			<p><a href = "https://www.unb.ca/fredericton/engineering/depts/gge/index.html" class="links">UNB Geodesy and Geomatics Engineering</a></p>
+		  </div>
+		 </div>
 		 <div class="col-12">
 		  <div class="col-5">
 			<h3 class="sections">ETH Zurich</h3>
@@ -170,7 +234,7 @@
 		 </div>
 		</section>
 
-		<section id="Skills" id="mainRight" class="bg-color col-12 skills">
+		<section id="Skills" id="mainRight" class="col-12 skills">
 			<h2 class="line">Technical Skills</h2>
 			
 			<div id="btnRight">
@@ -178,44 +242,49 @@
 			</div>			
 			<div class="skills-body">
 			<div class="skills-chart ">
-				<h3 class="skills">Software</h3>
+				<h3 class="skills">Software</h3>			
 				<div class="skills-bar">
 					<div class="container">
 						<div class="intermediate"></div>
 					</div>
-					<p class="skills-name">MS Word</p>
+					<p class="skills-name">ESRI ArcGIS Pro</p>
 				</div>
 				<div class="skills-bar">
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">ArcGIS Desktop 10.7.1</p>
-				</div>				
+					<p class="skills-name">ESRI ArcMap</p>
+				</div>	
 				<div class="skills-bar">
 					<div class="container">
-						<div class="intermediate"></div>
+						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">MS Excel</p>
+					<p class="skills-name">ESRI CityEngine</p>
+				</div>					
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">CloudCompare</p>					
 				</div>
 				<div class="skills-bar">
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">ArcGIS Pro 2.7.1</p>
-				</div>				
+					<p class="skills-name">Pix4D</p>					
+				</div>
 				<div class="skills-bar">
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">MS Access</p>
+					<p class="skills-name">Meshroom</p>					
 				</div>
 				<div class="skills-bar">
-
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
 					<p class="skills-name">PCI Geomatica</p>					
-				</div>	
+				</div>
 				<div class="skills-bar">
 					<div class="container">
 						<div class="beginner"></div>
@@ -248,11 +317,32 @@
 				</div>					
 			</div>
 			<div class="skills-chart">
+				<h3 class="skills">Databases</h3>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">PostgreSQL</p>	
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">MongoDB</p>	
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">MS Access</p>
+				</div>
+			</div>
+			<div class="skills-chart">
 				<h3 class="skills">Tech Languages</h3>
 
 				<div class="skills-bar">
 					<div class="container">
-						<div class="beginner"></div>
+						<div class="intermediate"></div>
 					</div>
 					<p class="skills-name">Python</p>	
 				</div>
@@ -260,7 +350,7 @@
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">HTML</p>
+					<p class="skills-name">MatLab</p>
 				</div>
 				<div class="skills-bar">
 					<div class="container">
@@ -272,26 +362,26 @@
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">CSS</p>
-				</div>				
+					<p class="skills-name">ArcPy</p>
+				</div>
 				<div class="skills-bar">
 					<div class="container">
 						<div class="beginner"></div>
 					</div>
-					<p class="skills-name">ArcPy</p>
+					<p class="skills-name">HTML</p>
 				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">CSS</p>
+				</div>				
 				<div class="skills-bar">
 					<div class="container">
 						<div class="novice"></div>
 					</div>
 					<p class="skills-name">JavaScript</p>
 				</div>
-				<div class="skills-bar">
-					<div class="container">
-						<div class="novice"></div>
-					</div>
-					<p class="skills-name">R</p>
-				</div>	
 			</div>
 			<div class="skills-chart">
 				<h3 class="skills">Web Based Platforms</h3>
@@ -328,10 +418,21 @@
 			</div>
 		    </div>
 		</section>	
+		<section class="col-12 bg-color" id="Contact">
+			<div>
+			<h2 class="line">Contact</h2>
+			<p><a href="mailto: reida15@gmail.com?subject=Job Application" class="foot-contactme">E-mail<i class="fa fa-envelope" id="mail"></i></a>
+			</p>
+			<p>Phone: (506) 429-3314
+			</p>
+			<p>Location: Fredericton, NB, Canada
+			</p>
+			</div>
+		</section>
 	</div>
 	<footer>
 	 <div class="foot-left">
-	  <p>Copyright © 2021 Andrea Reid<p>
+	  <p>Copyright © 2023 Andrea Reid<p>
 	 </div>
 	 <div class="foot-right">
 	  <a href="mailto: reida15@gmail.com?subject=Job Application" class="foot-contactme">Contact Me<i class="fa fa-envelope" id="mail"></i></a>
